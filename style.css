@@ -18,8 +18,13 @@ h2 {
 
 .HeaderHeader {
     color: #FF3333;
+    text-shadow: -1px -1px 0 #ddd, 1px -1px #ddd, -1px 1px 0 #ddd, 1px 1px 0 #ddd;
     font-size: 1.2em; 
     margin: auto;  
+}
+
+.ltd {
+    font-size: 0.6em;
 }
 
 .HeaderContact {
