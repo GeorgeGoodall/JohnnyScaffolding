@@ -1,0 +1,411 @@
+.Header {
+  background-color: black;
+}
+
+.HeaderOuter {
+  padding: 1em 12em;
+  height: 14em;
+}
+@media only screen and (max-width: 1400px) {
+  .HeaderOuter {
+    padding: 1em 4em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .HeaderOuter {
+    padding: 1em 2em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .HeaderOuter {
+    padding: 1em 1em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .HeaderOuter {
+    padding: 1em 2em;
+  }
+}
+
+.HeaderContent {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  grid-template-columns: 2fr 10fr 4fr;
+  gap: 1em 4em;
+}
+@media only screen and (max-width: 1400px) {
+  .HeaderContent {
+    grid-template-columns: 2fr 8fr 4fr;
+    gap: 1em 2em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .HeaderContent {
+    grid-template-columns: 2fr 9fr 1fr;
+    gap: 1em 2em;
+    justify-content: center;
+    grid-template-rows: 2fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .HeaderContent {
+    grid-template-columns: 2fr 7fr 2fr;
+    gap: 0.5em 1em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .HeaderContent {
+    grid-template-columns: 2fr 7fr 2fr;
+    gap: 0.1em 1em;
+  }
+}
+
+.HeaderImageContainer {
+  grid-row: 1/3;
+}
+
+.headerImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.HeaderHeader {
+  color: #FF3333;
+  text-shadow: -1px -1px 0 #ddd, 1px -1px #ddd, -1px 1px 0 #ddd, 1px 1px 0 #ddd;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+@media only screen and (max-width: 900px) {
+  .HeaderHeader {
+    max-width: 90%;
+  }
+}
+
+.HeaderHeader > h1 {
+  margin: 0em;
+}
+
+.ltd {
+  font-size: 0.6em;
+}
+
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+@media only screen and (max-width: 900px) {
+  .HeaderRight {
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+}
+
+.HeaderContact {
+  color: white;
+  margin-right: 3em;
+  text-align: right;
+}
+@media only screen and (max-width: 900px) {
+  .HeaderContact {
+    text-align: left;
+    margin-left: 2em;
+  }
+}
+
+.HeaderContactEntry {
+  color: #ccc;
+}
+
+.HeaderContactEntry > a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.HeaderContactEntry > a:hover {
+  color: #fff;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 0.6em 0.66em;
+  font-size: 2.6em !important;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.burgerIcon {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .burgerIcon {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.burgerBar {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  margin: 17.5% 0;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  grid-column: 2/4;
+  display: flex;
+  color: #ddd;
+  align-items: center;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
+
+.navLink {
+  margin-right: 2em;
+  text-align: center;
+}
+
+.navLink > a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.navLink > a:hover {
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+@media only screen and (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+}
+
+.projectTextArea {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  font-size: 1.5em;
+  width: 100%;
+  transform: translate(-50%, 0%);
+  background-color: rgba(0, 0, 0, 0.5960784314);
+}
+@media only screen and (max-width: 1400px) {
+  .projectTextArea {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .projectTextArea {
+    font-size: 1.5em;
+  }
+}
+
+.projectText {
+  font-weight: 700;
+  padding: 1em;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 1800px) {
+  html {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 0.5em;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  line-height: 0.6em;
+}
+
+.Banner {
+  width: 100%;
+  height: 20em;
+  position: relative;
+  text-align: center;
+}
+
+.BannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+  filter: blur(6px);
+  filter: brightness(20%);
+}
+
+.BannerInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px -1px 0 #000, 1px -1px #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media only screen and (max-width: 1400px) {
+  .BannerInner {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .BannerInner {
+    width: 90%;
+    font-size: 1.2em;
+  }
+}
+
+.main {
+  margin: 4em 10em;
+}
+@media only screen and (max-width: 1400px) {
+  .main {
+    margin: 4em 6em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main {
+    margin: 4em 4em;
+  }
+}
+
+.about {
+  margin-top: 2em;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+  object-position: 50% 15%;
+}
+
+.aboutInner {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 2em;
+  width: 20%;
+}
+@media only screen and (max-width: 900px) {
+  .aboutInner {
+    left: 80%;
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .aboutInner {
+    font-size: 1.5em;
+  }
+}
+
+.rightText {
+  margin-left: 50%;
+}
+
+.contactUsHere {
+  color: black;
+}
+
+.contactUsHere:hover {
+  color: black;
+}
+
+.Footer {
+  background-color: black;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10em;
+}
+
+.FooterEntry {
+  color: #ccc;
+}
+
+.FooterEntry > a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.FooterEntry > a:hover {
+  color: #fff;
+}
+
+.Left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=compiledStyle.css.map */

@@ -1,0 +1,162 @@
+@import "./modules/mediaQueries";
+
+@import "./Header.scss";
+@import "./Projects.scss";
+
+html {
+    @include responsive(small-desktop) {
+        font-size: 0.8em;
+    }
+
+    @include responsive(tab-port) {
+        font-size: 0.7em;
+    }
+
+    @include responsive(phone) {
+        font-size: 0.6em;
+    }
+
+    @include responsive(small-phone) {
+        font-size: 0.5em;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    line-height: 0.6em;
+}
+
+
+.Banner {
+    width: 100%;
+    height: 20em;
+    position: relative;
+    text-align: center;
+
+}
+
+.BannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    filter: blur(6px);
+    filter: brightness(20%);
+}
+
+.BannerInner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px -1px 0 #000, 1px -1px #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+
+    @include responsive(tab-land) {
+        width: 80%;
+    }
+
+    @include responsive(phone) {
+        width: 90%;
+        font-size: 1.2em;
+    }
+}
+
+.main {
+    margin: 4em 10em;
+
+    @include responsive(tab-land) {
+        margin: 4em 6em;
+    }
+
+    @include responsive(tab-port) {
+        margin: 4em 4em;
+    }
+}
+
+
+.about {
+    margin-top: 2em;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.aboutImage{
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    object-position: 50% 15%;
+}
+
+.aboutInner{
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    color: #00000099;
+    font-weight: bold;
+    font-size: 2em;
+    width: 20%;
+    
+    @include responsive(tab-port) {
+        left: 80%;
+        width: 30%;
+    }
+
+    @include responsive(phone) {
+        font-size: 1.5em;
+    }
+
+}
+
+.rightText {
+    margin-left: 50%;
+}
+
+.contactUsHere{
+    color: black;
+}
+
+.contactUsHere:hover{
+    color: black;
+}
+
+.Footer {
+    background-color: black;
+}
+
+.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10em;   
+}
+
+.FooterEntry {
+    color: #ccc;
+    
+}
+
+.FooterEntry > a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.FooterEntry > a:hover{
+    color: #fff;
+}
+
+
+.Left {
+    text-align: left;
+    align-items: flex-start;
+}
+
