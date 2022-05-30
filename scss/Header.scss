@@ -1,3 +1,5 @@
+
+
 .Header {
     background-color: black;
 }
@@ -61,9 +63,13 @@
     width: 100%;
 }
 
+
 .HeaderHeader {
+    $borderColor: #bbb;
+    $borderWidth: 1px;
+
     color: #FF3333;
-    text-shadow: -1px -1px 0 #ddd, 1px -1px #ddd, -1px 1px 0 #ddd, 1px 1px 0 #ddd;
+    text-shadow: -1 *$borderWidth -1 * $borderWidth 0 $borderColor, $borderWidth -1 * $borderWidth $borderColor, -1 * $borderWidth $borderWidth 0 $borderColor, $borderWidth $borderWidth 0 $borderColor;
     font-size: 1.4em;  
     display: flex;
     align-items: center;

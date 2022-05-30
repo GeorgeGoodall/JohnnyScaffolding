@@ -68,7 +68,7 @@
 
 .HeaderHeader {
   color: #FF3333;
-  text-shadow: -1px -1px 0 #ddd, 1px -1px #ddd, -1px 1px 0 #ddd, 1px 1px 0 #ddd;
+  text-shadow: -1px -1px 0 #bbb, 1px -1px #bbb, -1px 1px 0 #bbb, 1px 1px 0 #bbb;
   font-size: 1.4em;
   display: flex;
   align-items: center;
