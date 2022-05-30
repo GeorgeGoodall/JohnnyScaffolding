@@ -11,9 +11,29 @@
     <head>
         <link rel="stylesheet" href="compiledStyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+       
     </head>
 
     <body>
+
+        <div class="mobileNav" style="display: none" id="mobileNav">
+            <div class="close" onclick="closeMobileNav()"></div>
+            <div class="mobileNavList">
+                <div class="mobileNavLink">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="mobileNavLink">
+                    <a href="galary.html">Galary</a>
+                </div>
+                <div class="mobileNavLink">
+                    <a href="terms.html">Terms of service</a>
+                </div>
+                <div class="mobileNavLink">
+                    <a href="contact.html">Contact us</a>
+                </div>
+            </div>
+        </div>
 
         <div class="Header">
             <div class="HeaderOuter">
@@ -24,7 +44,7 @@
                     <div class="HeaderHeader">
                         <h1>Johnny London Scaffolding <span class="ltd">NW Ltd</span></h1>
                     </div>
-                    <div class="burgerIcon">
+                    <div class="burgerIcon" onclick="openMobileNav()">
                         <div class="burgerBar"></div>
                         <div class="burgerBar"></div>
                         <div class="burgerBar"></div>
@@ -86,6 +106,14 @@
                 </div>
                 <div class="project">
                     <img class="projectImage" src="./images/scaff6.jpg">
+                    <div class="projectTextArea">
+                        <div class="projectText">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, reprehenderit iusto suscipit voluptas quis id nisi consequuntur, rem voluptatem aperiam corporis ea beatae vero assumenda eos. Dolores illum illo quo?
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="projectImage" src="./images/scaff7.jpg">
                     <div class="projectTextArea">
                         <div class="projectText">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, reprehenderit iusto suscipit voluptas quis id nisi consequuntur, rem voluptatem aperiam corporis ea beatae vero assumenda eos. Dolores illum illo quo?
