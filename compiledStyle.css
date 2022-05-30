@@ -8,7 +8,8 @@
 }
 @media only screen and (max-width: 1400px) {
   .HeaderOuter {
-    padding: 1em 4em;
+    padding: 1em 2em;
+    height: 13em;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -35,12 +36,6 @@
   gap: 1em 4em;
 }
 @media only screen and (max-width: 1400px) {
-  .HeaderContent {
-    grid-template-columns: 2fr 8fr 4fr;
-    gap: 1em 2em;
-  }
-}
-@media only screen and (max-width: 900px) {
   .HeaderContent {
     grid-template-columns: 2fr 9fr 1fr;
     gap: 1em 2em;
@@ -98,7 +93,7 @@
   align-items: center;
   font-size: 0.8em;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .HeaderRight {
     flex-direction: row-reverse;
     justify-content: start;
@@ -110,7 +105,7 @@
   margin-right: 3em;
   text-align: right;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .HeaderContact {
     text-align: left;
     margin-left: 2em;
@@ -154,7 +149,7 @@
 .burgerIcon {
   display: none;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .burgerIcon {
     display: block;
     width: 70px;
@@ -179,7 +174,7 @@
   font-size: 1.6em;
   font-weight: bold;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .nav {
     display: none;
   }
