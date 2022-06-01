@@ -6,23 +6,23 @@
   padding: 1em 12em;
   height: 14em;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .HeaderOuter {
     padding: 1em 2em;
     height: 13em;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .HeaderOuter {
     padding: 1em 2em;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .HeaderOuter {
     padding: 1em 1em;
   }
 }
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
   .HeaderOuter {
     padding: 1em 2em;
   }
@@ -35,7 +35,7 @@
   grid-template-columns: 2fr 10fr 4fr;
   gap: 1em 4em;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .HeaderContent {
     grid-template-columns: 2fr 9fr 1fr;
     gap: 1em 2em;
@@ -43,13 +43,13 @@
     grid-template-rows: 2fr 1fr;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .HeaderContent {
     grid-template-columns: 2fr 7fr 1fr;
     gap: 0.5em 1em;
   }
 }
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
   .HeaderContent {
     grid-template-columns: 2fr 7fr 1fr;
     gap: 0.1em 1em;
@@ -74,7 +74,7 @@
   align-items: center;
   justify-self: start;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .HeaderHeader {
     max-width: 90%;
   }
@@ -93,7 +93,7 @@
   align-items: center;
   font-size: 0.8em;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .HeaderRight {
     flex-direction: row-reverse;
     justify-content: start;
@@ -105,7 +105,7 @@
   margin-right: 3em;
   text-align: right;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .HeaderContact {
     text-align: left;
     margin-left: 2em;
@@ -150,14 +150,14 @@
   display: none;
   cursor: pointer;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .burgerIcon {
     display: block;
     width: 70px;
     height: 70px;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .burgerIcon {
     width: 40px;
     height: 40px;
@@ -184,7 +184,7 @@
   font-size: 1.6em;
   font-weight: bold;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .nav {
     display: none;
   }
@@ -209,12 +209,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2em;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .projects {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .projects {
     grid-template-columns: 1fr;
   }
@@ -242,12 +242,12 @@
   transform: translate(-50%, 0%);
   background-color: rgba(0, 0, 0, 0.5960784314);
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .projectTextArea {
     font-size: 1em;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .projectTextArea {
     font-size: 1.5em;
   }
@@ -329,19 +329,19 @@
   gap: 1em;
   grid-template-areas: "a b b c c" "a b b d e" "f f g h h" "i i g j j";
 }
-@media (max-width: 1800px) {
+@media only screen and (max-width: 1800px) {
   .galary {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "a b b c" "d d e c" "f g g h" "f i j j";
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .galary {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a a" "b c" "b d" "e f" "g f" "h h" "i j";
   }
 }
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
   .galary {
     grid-template-columns: 1fr;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j";
@@ -394,22 +394,22 @@
   grid-area: j;
 }
 
-@media (max-width: 1800px) {
+@media only screen and (max-width: 1800px) {
   html {
     font-size: 0.8em;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 0.7em;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 0.6em;
   }
 }
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
   html {
     font-size: 0.5em;
   }
@@ -450,12 +450,12 @@ h2 {
   transform: translate(-50%, -50%);
   text-shadow: -1px -1px 0 #000, 1px -1px #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .BannerInner {
     width: 80%;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .BannerInner {
     width: 90%;
     font-size: 1.2em;
@@ -465,12 +465,12 @@ h2 {
 .main {
   margin: 4em 10em;
 }
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .main {
     margin: 4em 6em;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .main {
     margin: 4em 4em;
   }
@@ -500,13 +500,13 @@ h2 {
   font-size: 2em;
   width: 20%;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .aboutInner {
     left: 80%;
     width: 30%;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .aboutInner {
     font-size: 1.5em;
   }
