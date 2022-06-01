@@ -3,6 +3,7 @@
 @import "./Header.scss";
 @import "./Projects.scss";
 @import "./mobileNav.scss";
+@import "./galary.scss";
 
 html {
     @include responsive(small-desktop) {
