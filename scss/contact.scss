@@ -1,0 +1,50 @@
+.contact_deetails {
+    font-size: 2em;
+
+    @include responsive(tab-land) {
+        font-size: 1.7em;
+    }
+
+    @include responsive(tab-port) {
+        font-size: 1.7em;
+    }
+
+    @include responsive(small-phone) {
+        font-size: 1.4em;
+        
+    }
+}
+
+.contract_entry {
+    margin-bottom: 1em;
+    text-align: center;
+
+    @include responsive(small-phone) {
+        text-align: left;
+        
+    }
+}
+
+.contact_lable {
+    justify-self: end;
+    color: #444;
+}
+
+.contact_item {
+    justify-self: start;
+
+    
+    text-decoration: none;
+    color: #222;
+    font-weight: bolder;
+
+    &:hover {
+        color: #444;
+    }
+    
+    
+
+    width: 10em;
+    
+}
+

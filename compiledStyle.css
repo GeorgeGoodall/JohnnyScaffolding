@@ -4,17 +4,18 @@
 
 .HeaderOuter {
   padding: 1em 12em;
-  height: 14em;
+  height: 10em;
 }
 @media only screen and (max-width: 1400px) {
   .HeaderOuter {
     padding: 1em 2em;
-    height: 13em;
+    height: 12em;
   }
 }
 @media only screen and (max-width: 900px) {
   .HeaderOuter {
     padding: 1em 2em;
+    height: 14em;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -45,19 +46,23 @@
 }
 @media only screen and (max-width: 600px) {
   .HeaderContent {
-    grid-template-columns: 2fr 7fr 1fr;
+    grid-template-columns: 7fr 1fr;
     gap: 0.5em 1em;
   }
 }
 @media only screen and (max-width: 350px) {
   .HeaderContent {
-    grid-template-columns: 2fr 7fr 1fr;
     gap: 0.1em 1em;
   }
 }
 
 .HeaderImageContainer {
   grid-row: 1/3;
+}
+@media only screen and (max-width: 600px) {
+  .HeaderImageContainer {
+    display: none;
+  }
 }
 
 .headerImage {
@@ -91,9 +96,9 @@
 .HeaderRight {
   display: flex;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 1em;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
   .HeaderRight {
     flex-direction: row-reverse;
     justify-content: start;
@@ -105,10 +110,16 @@
   margin-right: 3em;
   text-align: right;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
   .HeaderContact {
     text-align: left;
     margin-left: 2em;
+    margin-right: 0em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .HeaderContact {
+    font-size: 1em;
   }
 }
 
@@ -237,19 +248,29 @@
   position: absolute;
   bottom: 0%;
   left: 50%;
-  font-size: 1.5em;
+  font-size: 1.2em;
   width: 100%;
   transform: translate(-50%, 0%);
   background-color: rgba(0, 0, 0, 0.5960784314);
 }
+@media only screen and (max-width: 1800px) {
+  .projectTextArea {
+    font-size: 1.4em;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .projectTextArea {
-    font-size: 1em;
+    font-size: 1.6em;
   }
 }
 @media only screen and (max-width: 900px) {
   .projectTextArea {
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .projectTextArea {
+    font-size: 2em;
   }
 }
 
@@ -394,6 +415,51 @@
   grid-area: j;
 }
 
+.contact_deetails {
+  font-size: 2em;
+}
+@media only screen and (max-width: 1400px) {
+  .contact_deetails {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact_deetails {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .contact_deetails {
+    font-size: 1.4em;
+  }
+}
+
+.contract_entry {
+  margin-bottom: 1em;
+  text-align: center;
+}
+@media only screen and (max-width: 350px) {
+  .contract_entry {
+    text-align: left;
+  }
+}
+
+.contact_lable {
+  justify-self: end;
+  color: #444;
+}
+
+.contact_item {
+  justify-self: start;
+  text-decoration: none;
+  color: #222;
+  font-weight: bolder;
+  width: 10em;
+}
+.contact_item:hover {
+  color: #444;
+}
+
 @media only screen and (max-width: 1800px) {
   html {
     font-size: 0.8em;
@@ -458,7 +524,6 @@ h2 {
 @media only screen and (max-width: 600px) {
   .BannerInner {
     width: 90%;
-    font-size: 1.2em;
   }
 }
 
@@ -473,6 +538,11 @@ h2 {
 @media only screen and (max-width: 900px) {
   .main {
     margin: 4em 4em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    margin: 4em 1em;
   }
 }
 
