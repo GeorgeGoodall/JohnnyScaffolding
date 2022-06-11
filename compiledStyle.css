@@ -252,6 +252,7 @@
   width: 100%;
   transform: translate(-50%, 0%);
   background-color: rgba(0, 0, 0, 0.5960784314);
+  display: none;
 }
 @media only screen and (max-width: 1800px) {
   .projectTextArea {
@@ -599,19 +600,54 @@ h2 {
 }
 
 .FooterContent {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
   align-items: center;
   padding: 1em 10em;
 }
+@media only screen and (max-width: 900px) {
+  .FooterContent {
+    grid-template-columns: 1fr;
+    padding: 2em 4em;
+    gap: 1em;
+  }
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+@media only screen and (max-width: 900px) {
+  .footerNav {
+    text-align: left;
+  }
+}
+
+.FooterContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerNavLink {
+  text-decoration: none;
+}
+.footerNavLink a {
+  text-decoration: none;
+  color: #bbb;
+}
+.footerNavLink:hover a {
+  color: white;
+}
 
 .FooterEntry {
-  color: #ccc;
+  color: #bbb;
 }
 
 .FooterEntry > a {
   text-decoration: none;
-  color: #ccc;
+  color: #bbb;
 }
 
 .FooterEntry > a:hover {

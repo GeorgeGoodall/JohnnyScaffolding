@@ -144,20 +144,60 @@ h2 {
 }
 
 .FooterContent {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
     align-items: center;
-    padding: 1em 10em;   
+    padding: 1em 10em;  
+    
+    @include responsive(tab-port) {
+        grid-template-columns: 1fr;
+        padding: 2em 4em;  
+        gap: 1em;
+    }
 }
 
+.footerNav {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+
+    @include responsive(tab-port) {
+        text-align: left;
+    }
+}
+
+.FooterContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavLink {
+    text-decoration: none;
+
+    & a {
+        text-decoration: none;
+        color: #bbb;
+        
+    }
+
+    &:hover {
+        a {
+            color: white;
+        }
+    }
+}
+
+
 .FooterEntry {
-    color: #ccc;
+    color: #bbb;
     
 }
 
 .FooterEntry > a{
     text-decoration: none;
-    color: #ccc;
+    color: #bbb;
 }
 
 .FooterEntry > a:hover{
