@@ -3,8 +3,9 @@
 @import "./Header.scss";
 @import "./Projects.scss";
 @import "./mobileNav.scss";
-@import "./galary.scss";
+@import "./gallary.scss";
 @import "./contact.scss";
+@import "./terms.scss";
 
 html {
 
@@ -30,6 +31,11 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
 }
 
 h2 {
