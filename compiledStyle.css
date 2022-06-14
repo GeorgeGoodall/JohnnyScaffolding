@@ -467,6 +467,15 @@
 .terms p {
   font-size: 1.2em;
 }
+@media only screen and (max-width: 900px) {
+  .terms h1 {
+    font-size: 3em;
+    line-height: 0.5em;
+  }
+  .terms p {
+    font-size: 1.5em;
+  }
+}
 
 @media only screen and (max-width: 1800px) {
   html {
@@ -494,8 +503,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 
 h2 {
@@ -608,6 +617,7 @@ h2 {
 
 .Footer {
   background-color: black;
+  margin-top: auto;
 }
 
 .FooterContent {

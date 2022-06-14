@@ -6,4 +6,15 @@
     p {
         font-size: 1.2em;
     }
+
+    @include responsive(tab-port){
+        h1 {
+            font-size: 3em;
+            line-height: 0.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
 }
